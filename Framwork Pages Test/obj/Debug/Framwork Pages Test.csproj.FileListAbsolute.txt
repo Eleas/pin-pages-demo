@@ -1,0 +1,15 @@
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.csproj.AssemblyReference.cache
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.csproj.SuggestedBindingRedirects.cache
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\MainWindow.baml
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\MainWindow.g.cs
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\App.g.cs
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test_MarkupCompile.cache
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.g.resources
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork_Pages_Test.Properties.Resources.resources
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.csproj.GenerateResource.cache
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.csproj.CoreCompileInputs.cache
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\bin\Debug\Framwork Pages Test.exe.config
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\bin\Debug\Framwork Pages Test.exe
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\bin\Debug\Framwork Pages Test.pdb
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.exe
+C:\Users\bdpaulsen\source\repos\Framwork Pages Test\Framwork Pages Test\obj\Debug\Framwork Pages Test.pdb

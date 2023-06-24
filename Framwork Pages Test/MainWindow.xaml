@@ -1,0 +1,21 @@
+﻿<Window x:Class="Framwork_Pages_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid Width="200" Height="100">
+        <UserControl Name="page1" Width="80">
+            <Grid Background="Aqua">
+                <Button Content="Go to Page 2" Click="GoToPage2_Click"/>
+                <!-- Other UI elements for the first page -->
+            </Grid>
+        </UserControl>
+
+        <UserControl Name="page2" Visibility="Hidden">
+            <Grid Background="Coral">
+                <Button Content="Go to Page 1" Click="GoToPage1_Click"/>
+                <!-- Other UI elements for the second page -->
+            </Grid>
+        </UserControl>
+    </Grid>
+</Window>
