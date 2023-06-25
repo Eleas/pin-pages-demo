@@ -9,12 +9,13 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="224" />
                 </Grid.RowDefinitions>
-                <TextBox Text="User björn paulsen has no registered pincode" HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
+                <TextBox Name="describeUserPincodeStatus" Text="User björn paulsen has no registered pincode" 
+                         HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
                          TextWrapping="Wrap" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" 
                          IsReadOnly="True" IsUndoEnabled="False" IsHitTestVisible="False" AllowDrop="False" Focusable="False" IsTabStop="False" />
                 <StackPanel Orientation="Horizontal" Height="40" Margin="0,100,29,47" HorizontalAlignment="Right">
-                    <Button Content="Add pincode" Click="ModifyPincode_Click" Margin="5" Padding="8,1,8,1"/>
-                    <Button Content="Delete pincode" Margin="5" Padding="8,1,8,1" Visibility="Collapsed" />
+                    <Button Name="addEditButton" Content="Add pincode" Click="ModifyPincode_Click" Margin="5" Padding="8,1,8,1"/>
+                    <Button Name="deletePincodeButton" Content="Delete pincode" Margin="5" Padding="8,1,8,1" Visibility="Collapsed" />
                     <Button Content="Close" Click="ClosePinHandlingWindow_Click" Margin="5" Padding="8,1,8,1" />
                 </StackPanel>
             </Grid>
@@ -25,7 +26,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="224" />
                 </Grid.RowDefinitions>
-                <TextBox Text="Enter new pincode for user björn paulsen" HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
+                <TextBox Text="Enter new pincode for user björn paulsen" 
+                         HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
                          TextWrapping="Wrap" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" 
                          IsReadOnly="True" IsUndoEnabled="False" IsHitTestVisible="False" AllowDrop="False" Focusable="False" IsTabStop="False" />
                 <Label Content="Pincode" HorizontalAlignment="Left" Margin="25,63,0,0" VerticalAlignment="Top"/>
@@ -34,7 +36,7 @@
                 <PasswordBox Name="inputRepeatPincode" HorizontalAlignment="Left" Margin="139,92,0,0" VerticalAlignment="Top" Width="160"/>
 
                 <StackPanel Orientation="Horizontal" Height="40" Margin="0,124,67,60" HorizontalAlignment="Right">
-                    <Button Content="OK" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="OK" Click="ConfirmPincodeChange_Click" Margin="5" Padding="8,1,8,1"/>
                     <Button Content="Back" Click="BackToBeginning_Click" Margin="5" Padding="8,1,8,1"/>
                 </StackPanel>
             </Grid>

@@ -21,6 +21,15 @@ namespace Framework_Pages_Test
             pincodeStartPage.Visibility = Visibility.Visible;
         }
 
+        private void ConfirmPincodeChange_Click(object sender, RoutedEventArgs e)
+        {
+            enterNewPinPage.Visibility = Visibility.Hidden;
+            pincodeStartPage.Visibility = Visibility.Visible;
+            addEditButton.Content = "Edit pincode";
+            describeUserPincodeStatus.Text = "A pincode exists for user björn paulsen";
+            deletePincodeButton.Visibility = Visibility.Visible;
+        }
+
         private void ClosePinHandlingWindow_Click(object sender, RoutedEventArgs e)
         {
             Close();
