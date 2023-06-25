@@ -4,7 +4,7 @@
         Title="MainWindow" Height="224" Width="383" ResizeMode="CanMinimize">
 
     <Grid>
-        <UserControl Name="pincodeStartPage" Visibility="Hidden">
+        <UserControl Name="pincodeStartPage">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="224" />
@@ -13,14 +13,14 @@
                          TextWrapping="Wrap" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" 
                          IsReadOnly="True" IsUndoEnabled="False" IsHitTestVisible="False" AllowDrop="False" Focusable="False" IsTabStop="False" />
                 <StackPanel Orientation="Horizontal" Height="40" Margin="0,100,29,47" HorizontalAlignment="Right">
-                    <Button Content="Add pincode" Click="AddNewPincode" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="Add pincode" Click="ModifyPincode_Click" Margin="5" Padding="8,1,8,1"/>
                     <Button Content="Delete pincode" Margin="5" Padding="8,1,8,1" Visibility="Collapsed" />
-                    <Button Content="Close" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="Close" Click="ClosePinHandlingWindow_Click" Margin="5" Padding="8,1,8,1" />
                 </StackPanel>
             </Grid>
         </UserControl>
 
-        <UserControl Name="enterNewPinPage">
+        <UserControl Name="enterNewPinPage" Visibility="Hidden">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="224" />
@@ -35,7 +35,7 @@
 
                 <StackPanel Orientation="Horizontal" Height="40" Margin="0,124,67,60" HorizontalAlignment="Right">
                     <Button Content="OK" Margin="5" Padding="8,1,8,1"/>
-                    <Button Content="Back" Click="BackToBeginning" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="Back" Click="BackToBeginning_Click" Margin="5" Padding="8,1,8,1"/>
                 </StackPanel>
             </Grid>
         </UserControl>
