@@ -1,20 +1,42 @@
 ﻿<Window x:Class="Framework_Pages_Test.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="224" Width="383" ResizeMode="CanMinimize">
 
-    <Grid Width="200" Height="100">
-        <UserControl Name="page1" Width="80">
-            <Grid Background="Aqua">
-                <Button Content="Go to Page 2" Click="GoToPage2_Click"/>
-                <!-- Other UI elements for the first page -->
+    <Grid>
+        <UserControl Name="pincodeStartPage" Visibility="Hidden">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="224" />
+                </Grid.RowDefinitions>
+                <TextBox Text="User björn paulsen has no registered pincode" HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
+                         TextWrapping="Wrap" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" 
+                         IsReadOnly="True" IsUndoEnabled="False" IsHitTestVisible="False" AllowDrop="False" Focusable="False" IsTabStop="False" />
+                <StackPanel Orientation="Horizontal" Height="40" Margin="0,100,29,47" HorizontalAlignment="Right">
+                    <Button Content="Add pincode" Click="AddNewPincode" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="Delete pincode" Margin="5" Padding="8,1,8,1" Visibility="Collapsed" />
+                    <Button Content="Close" Margin="5" Padding="8,1,8,1"/>
+                </StackPanel>
             </Grid>
         </UserControl>
 
-        <UserControl Name="page2" Visibility="Hidden">
-            <Grid Background="Coral">
-                <Button Content="Go to Page 1" Click="GoToPage1_Click"/>
-                <!-- Other UI elements for the second page -->
+        <UserControl Name="enterNewPinPage">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="224" />
+                </Grid.RowDefinitions>
+                <TextBox Text="Enter new pincode for user björn paulsen" HorizontalAlignment="Left" Margin="18,22,0,0" VerticalAlignment="Top" Height="56" Width="316" 
+                         TextWrapping="Wrap" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" 
+                         IsReadOnly="True" IsUndoEnabled="False" IsHitTestVisible="False" AllowDrop="False" Focusable="False" IsTabStop="False" />
+                <Label Content="Pincode" HorizontalAlignment="Left" Margin="25,63,0,0" VerticalAlignment="Top"/>
+                <Label Content="Repeat pincode" HorizontalAlignment="Left" Margin="25,87,0,0" VerticalAlignment="Top"/>
+                <PasswordBox Name="inputPincode" HorizontalAlignment="Left" Margin="139,68,0,0" VerticalAlignment="Top" Width="160"/>
+                <PasswordBox Name="inputRepeatPincode" HorizontalAlignment="Left" Margin="139,92,0,0" VerticalAlignment="Top" Width="160"/>
+
+                <StackPanel Orientation="Horizontal" Height="40" Margin="0,124,67,60" HorizontalAlignment="Right">
+                    <Button Content="OK" Margin="5" Padding="8,1,8,1"/>
+                    <Button Content="Back" Click="BackToBeginning" Margin="5" Padding="8,1,8,1"/>
+                </StackPanel>
             </Grid>
         </UserControl>
     </Grid>

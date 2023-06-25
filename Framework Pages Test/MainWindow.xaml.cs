@@ -9,16 +9,16 @@ namespace Framework_Pages_Test
             InitializeComponent();
         }
 
-        private void GoToPage2_Click(object sender, RoutedEventArgs e)
+        private void AddNewPincode(object sender, RoutedEventArgs e)
         {
-            page1.Visibility = Visibility.Hidden;
-            page2.Visibility = Visibility.Visible;
+            pincodeStartPage.Visibility = Visibility.Hidden;
+            enterNewPinPage.Visibility = Visibility.Visible;
         }
 
-        private void GoToPage1_Click(object sender, RoutedEventArgs e)
+        private void BackToBeginning(object sender, RoutedEventArgs e)
         {
-            page2.Visibility = Visibility.Hidden;
-            page1.Visibility = Visibility.Visible;
+            enterNewPinPage.Visibility = Visibility.Hidden;
+            pincodeStartPage.Visibility = Visibility.Visible;
         }
     }
 }
